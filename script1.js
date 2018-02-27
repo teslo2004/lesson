@@ -1,16 +1,19 @@
 var str = prompt("Введите строку: ");
-var otkr=0;
-var zakr=0;
+var skobki=0;
 for(var i=0; i<str.length;i++){
-	if(str[i]=="("){
-		otkr++;
-	}
+	if(str[i]=="(" && skobki>=0){ //исключаем случай ())(()
+		skobki++;
+			}
 	else if(str[i]==")"){
-		zakr++;
+		skobki--;
 	}
+	
 }
-if (otkr%zakr ==0 && str[0]=="(" && str[str.length-1]==")"){
+if (skobki ==0){
 	alert("True");
 }else{
 	alert("False");
 }
+
+
+
