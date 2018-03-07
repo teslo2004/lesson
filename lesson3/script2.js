@@ -1,3 +1,4 @@
+﻿
 var arr = ["Александр", "Виктор", "Игорь", "Дмитрий", "Василий", "Геннадий"];
 
 var n = 10;
@@ -15,9 +16,7 @@ for (var i in arr2) {
     };
 	
 	arr2[i]=human;
-	alert(human.about());
-}
 
-
-
-
+}	arr2.forEach(function(elem){
+		console.log(elem.about());
+	})
