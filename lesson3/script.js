@@ -20,5 +20,5 @@ console.log(arr);
 
 arr.sort(function(a,b){
 	return Math.abs(b%10) - Math.abs(a%10);
-};
+});
 console.log(arr);
