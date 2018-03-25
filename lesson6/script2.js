@@ -16,7 +16,7 @@ arr2 = [
 		var data=arr2[i];
 		var str="";
 		data.forEach(function(item){
-		str+="<td id='ss'>"+item+"</td>";
+		str+="<td>"+item+"</td>";
 
 	});
 	var ss=document.getElementById("ss");
@@ -27,5 +27,5 @@ arr2 = [
 	
 	var btn=document.getElementById("btn");
 	btn.addEventListener("click", function(){
-		alert(ss.innerText);
+		alert(tr.firstChild.innerText);
 	})
