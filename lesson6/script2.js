@@ -19,9 +19,7 @@ arr2 = [
 		str+="<td>"+item+"</td>";
 
 	});
-	var ss=document.getElementById("ss");
 	tr.innerHTML=str+"<input type='button' value='click' id='btn'/>";
-
 	tbody.appendChild(tr);
 	}
 	
