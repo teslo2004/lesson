@@ -19,11 +19,16 @@ arr2 = [
 		str+="<td>"+item+"</td>";
 
 	});
-	tr.innerHTML=str+"<input type='button' value='click' id='btn'/>";
+	tr.innerHTML=str+"<input type='button' value='click' class='btn'/>";
 	tbody.appendChild(tr);
 	}
 	
-	var btn=document.getElementById("btn");
-	btn.addEventListener("click", function(){
-		alert(tr.firstChild.innerText);
+	
+	var btn=document.getElementsByClassName("btn");
+	for(var i=0;i<btn.length;i++){
+	btn[i].addEventListener("click", function(){
+		
+		alert(this.parentNode.firstChild.innerHTML);
+	
 	})
+	}
