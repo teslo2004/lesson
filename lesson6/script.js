@@ -37,7 +37,9 @@ document.getElementById("operation").value = op;
 document.calc.vvod.value = op; 
 	
 }
-function ravno() {
+
+var ravn = document.getElementById("ravn")
+ravn.addEventListener("click", function() {
 if (document.calc.vvod.value == 0) {
 pole = document.calc.vvod.value; 
 } else { 
@@ -57,7 +59,7 @@ pole = Number(document.getElementById("mem").value) / Number(document.calc.vvod.
 document.calc.vvod.value = pole;
 document.getElementById("mem").value=0;
 document.getElementById("res").value=pole;
-}
+})
 
 var memoryM = document.getElementById("memM");
 memoryM.addEventListener("click", function(){

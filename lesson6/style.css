@@ -15,6 +15,7 @@
 	float: left;
 	margin:12px;
 }
-#operation, #mem, #memoM{
-	display:;
+#operation, #mem, #res{
+	
+	display: none;
 }
