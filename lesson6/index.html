@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="calc" id="forma">
+<div>
+<input type="text" name="vvod" value="0" id="vvod1" />
+</div>
+<div id="knopka">
+<input type="button" id="kn1" class="num" value="1"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn2" class="num" value="2"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn3" class="num" value="3"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn4" class="num" value="4"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn5" class="num" value="5"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn6" class="num" value="6"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn7" class="num" value="7"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn8" class="num" value="8"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn9" class="num" value="9"/>
+</div>
+<div id="knopka">
+<input type="button" id="kn0" class="num" value="0"/>
+</div>
+<div id="knopka">
+<input type="button" id="sbr" value="CE"/>
+</div>
+<div id="knopka">
+<input type="button" id="ravn" value="=" onclick="ravno();" />
+</div>
+<div id="knopka">
+<input type="button"  id="memM" value="M"/>
+</div>
+<div id="knopka">
+<input type="button"  id="memMR" value="MR"/>
+</div>
+<div id="knopka">
+<input type="button"  id="memMC" value="MC"/>
+</div>
+<div id="knopka">
+<input type="button" id="plus" class="znak" value="+" onclick="znak(this.value)"/>
+</div>
+<div id="knopka">
+<input type="button" id="minus" class="znak" value="-" onclick="znak(this.value)"/>
+</div>
+<div id="knopka">
+<input type="button" id="umn" class="znak" value="*" onclick="znak(this.value)"/>
+</div>
+<div id="knopka">
+<input type="button" id="razd" class="znak" value="/" onclick="znak(this.value)" />
+</div>
+<input id="operation" type="text" name="operation" value="0" /> 
+<input id="mem" type="text" name="mem" value="0" />
+<input id="res" type="text" name="res" value="0" /><br>
+В памяти <input id="memoM" type="text" name="memoM" value="0" />
+
+
+</form>
+<script src="script.js"></script>
+</body>
+
+</html>
