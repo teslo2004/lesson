@@ -5,15 +5,15 @@ btn.addEventListener("click", function(){
 	var table='<table border="3" width="760px" id="color"><tbody>'
         for(var i = 1;i <= n;i++ ){
  
-            table += '<tr id="color">';
+            table += "<tr>";
  
             for(var j = 1;j <= n;j++ ){
-                table += '<td >Таблица N*N</td>';
+                table += "<td >Таблица N*N</td>";
             }
-            table += '</tr>';
+            table += "</tr>";
         }
         table += '</tbody></table>';
-        document.getElementById('table').innerHTML = table;
+        document.getElementById("table").innerHTML = table;
 
 var color=document.getElementById("color");
 color.addEventListener("click", function(e){
