@@ -12,5 +12,8 @@ mail.addEventListener("keydown", function(e) {
   if (value[value.length-1]=="." && chars==".") {
     e.preventDefault();
   }
+  if (value.length==0 && +(chars)) {
+    e.preventDefault();
+  }
 });
 
