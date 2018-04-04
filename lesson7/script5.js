@@ -15,8 +15,8 @@ btn.addEventListener("click", function(){
         table += '</tbody></table>';
         document.getElementById("table").innerHTML = table;
 
-var color=document.getElementById("color");
-color.addEventListener("click", function(e){
+	var color=document.getElementById("color");
+	color.addEventListener("click", function(e){
 		if(e.target.nodeName=="TD"){
 		e.target.bgColor=styleColor[Math.floor(styleColor.length*Math.random())];
 	}
