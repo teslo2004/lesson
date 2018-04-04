@@ -18,7 +18,7 @@ btn.addEventListener("click", function(){
 var color=document.getElementById("color");
 color.addEventListener("click", function(e){
 		if(e.target.nodeName=="TD"){
-		e.target.id=styleColor[Math.floor(styleColor.length*Math.random())];
+		e.target.bgColor=styleColor[Math.floor(styleColor.length*Math.random())];
 	}
 })
 })
