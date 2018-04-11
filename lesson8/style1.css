@@ -1,0 +1,25 @@
+#contextMenu{
+	position: relative;
+
+	background-color: #efefef;
+	box-shadow: 1px 1px 2px #999;
+	width: 200px;
+	display:none;
+}
+#contextMenu ul{
+	margin: 0;
+	padding: 0;
+}
+#contextMenu li{
+	padding: 10px;
+
+	width: 100%;
+	display:block;
+	margin: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	
+}
+#contextMenu li:hover{
+	background-color:#ccc;
+}
