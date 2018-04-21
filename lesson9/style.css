@@ -1,0 +1,8 @@
+#type_flower img{
+	height:100px;
+	float: left;
+}	
+
+#type_flower img:hover{
+	background-color:blue;
+}	
