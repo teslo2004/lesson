@@ -24,7 +24,7 @@ var dostavkaT = [
 var kartinki = document.getElementById("kartinki");
 var str0="";
 name_flower.forEach(function(flowers){
-	var flower = "<div class='cl1'><img src='"+flowers.img+"' alt='"+flowers.prices+"'></div>";
+	var flower = "<div class='cl1'><img src='"+flowers.img+"' alt='"+flowers.prices+"' title='"+flowers.name+"'></div>";
 	str0+=flower;
 }) 
 kartinki.innerHTML=str0;
@@ -105,22 +105,3 @@ itogo.value=price.value*num.value+(+num2.value)+(+num3.value)+" руб.";
 price.addEventListener("input", function(){
 itogo.value=price.value*num.value+(+num2.value)+(+num3.value)+" руб.";
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
