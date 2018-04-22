@@ -1,8 +1,15 @@
-#type_flower img{
+html{
+	width:700px;
+}
+#kartinki img{
 	height:100px;
 	float: left;
+	margin-bottom:30px;
 }	
 
 #type_flower img:hover{
 	background-color:blue;
 }	
+.cl1{
+	float:left;
+	}

@@ -1,12 +1,11 @@
 var name_flower=[
-{name: "Выберите цветок",prices:0},
-{name: "Роза",prices:140},
-{name: "Пион",prices:100},
-{name: "Ромашка",prices:50},
-{name: "Тюльпан",prices:85},
-{name: "Гвоздика",prices:40},
-{name: "Лилия",prices:90},
-{name: "Гладиолус",prices:120}
+{name: "Роза",prices:140, img:"rose.jpg"},
+{name: "Пион",prices:100, img:"pion.jpg"},
+{name: "Ромашка",prices:50, img:"romashka.jpg"},
+{name: "Тюльпан",prices:85, img:"tulpan.jpg"},
+{name: "Гвоздика",prices:40, img:"gvozdika.jpg"},
+{name: "Лилия",prices:90, img:"lilia.jpg"},
+{name: "Гладиолус",prices:120, img:"glad.jpg"}
 ];
 
 var upakovka = [
@@ -22,20 +21,24 @@ var dostavkaT = [
 {name_dost:"Курьером к получателю", cena:2}
 ];
 
-var type_flower = document.getElementById("type_flower");
-var str="";
+var kartinki = document.getElementById("kartinki");
+var str0="";
 name_flower.forEach(function(flowers){
-	var flower = "<option value='"+flowers.prices+"'>"+flowers.name+"</option>";
-	str+=flower;
-});
-type_flower.innerHTML=str;
-type_flower.children[0].disabled=true;
+	var flower = "<div class='cl1'><img src='"+flowers.img+"' alt='"+flowers.prices+"'></div>";
+	str0+=flower;
+}) 
+kartinki.innerHTML=str0;
+
+
 
 var price = document.getElementById("price");
-type_flower.addEventListener("click", function(){
-price.value=type_flower.value+" руб.";
-})
+var cl1=document.getElementsByClassName("cl1");
 
+for(var i=0;i<cl1.length;i++){
+	cl1[i].addEventListener("click",function(){
+		price.value=this.lastChild.alt;
+	})
+}
 
 var dostavka = document.getElementById("dostavka");
 var str1="";
@@ -48,7 +51,7 @@ dostavka.children[0].disabled=true;
 
 var num2 = document.getElementById("num2");
 dostavka.addEventListener("click", function(){
-num2.value=dostavka.value+" руб.";
+num2.value=dostavka.value;
 })
 
 var upak = document.getElementById("upak");
@@ -74,20 +77,19 @@ var itogo = document.getElementById("itogo");
 
 
 dostavka.addEventListener("click", function(){
-itogo.value=type_flower.value*num.value+(+num2.value)+(+num3.value)+" руб.";
+itogo.value=price.value*num.value+(+num2.value)+(+num3.value)+" руб.";
 })
 
 num.addEventListener("input", function(){
-itogo.value=type_flower.value*num.value+(+num2.value)+(+num3.value)+" руб.";
+itogo.value=price.value*num.value+(+num2.value)+(+num3.value)+" руб.";
 })
 
 upak.addEventListener("click", function(){
-itogo.value=type_flower.value*num.value+(+num2.value)+(+num3.value)+" руб.";
+itogo.value=price.value*num.value+(+num2.value)+(+num3.value)+" руб.";
 })
 
-
-type_flower.addEventListener("input", function(){
-itogo.value=type_flower.value*num.value+(+num2.value)+(+num3.value)+" руб.";
+price.addEventListener("input", function(){
+itogo.value=price.value*num.value+(+num2.value)+(+num3.value)+" руб.";
 })
 
 
