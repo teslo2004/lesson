@@ -1,20 +1,15 @@
-.{
+*{
 	margin:0;
-	padding:0
-	
+	padding:0;
 }
 
 #kartinki img{
-	height:100px;
+	height:150px;
 	float: left;
-	margin-bottom:30px;
-	opacity: 0.7;
+	padding:20px;
 }	
 
-#kartinki img:hover{
-	height:140px;
-	opacity: 1;
-}	
+
 .cl1{
 	float:left;
 	}
@@ -23,4 +18,28 @@
 #forma{
 	width:100%;
 	float:left;
+	margin-left:20px;
+	font-size:18px;
+	font-family:Comic Sans MS;
+}
+#forma label{
+	font-weight: bold;
+}
+
+#forma input{
+	font-size:18px;
+}
+
+#forma select{
+	font-size:18px;
+	font-family:Comic Sans MS;
+}
+
+.cl2{
+	border:solid 3px gold;
+	opacity: 1;
+	float:left;
+}
+.kartinki{
+	display:inline;
 }

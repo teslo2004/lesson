@@ -9,9 +9,9 @@ var name_flower=[
 ];
 
 var upakovka = [
-{name_upak:"Нет упаковки", cena2: 0}, 
-{name_upak:"Бумажная", cena2: 3},
-{name_upak:"Фольга", cena2: 5}
+{name_upak:"Нет упаковки ", cena2: 0}, 
+{name_upak:"Бумажная ", cena2: 3},
+{name_upak:"Фольга ", cena2: 5}
 ];
 
 var dostavkaT = [
@@ -30,7 +30,6 @@ name_flower.forEach(function(flowers){
 kartinki.innerHTML=str0;
 
 
-
 var price = document.getElementById("price");
 var cl1=document.getElementsByClassName("cl1");
 
@@ -40,6 +39,20 @@ for(var i=0;i<cl1.length;i++){
 	})
 }
 
+for(var i=0;i<cl1.length;i++){
+	cl1[i].addEventListener("click", function(){
+	this.className='cl2';
+	})
+}
+
+for(var i=0;i<cl1.length;i++){
+	cl1[i].addEventListener("dblclick", function(){
+	this.className='cl1';
+	price.value = 0;
+	num.value=0;
+	itogo.value=0;
+	})
+}
 
 var dostavka = document.getElementById("dostavka");
 var str1="";
