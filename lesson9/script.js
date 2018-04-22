@@ -40,6 +40,7 @@ for(var i=0;i<cl1.length;i++){
 	})
 }
 
+
 var dostavka = document.getElementById("dostavka");
 var str1="";
 dostavkaT.forEach(function(dostav){

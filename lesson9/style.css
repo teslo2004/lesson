@@ -1,15 +1,26 @@
-html{
-	width:700px;
+.{
+	margin:0;
+	padding:0
+	
 }
+
 #kartinki img{
 	height:100px;
 	float: left;
 	margin-bottom:30px;
+	opacity: 0.7;
 }	
 
-#type_flower img:hover{
-	background-color:blue;
+#kartinki img:hover{
+	height:140px;
+	opacity: 1;
 }	
 .cl1{
 	float:left;
 	}
+
+
+#forma{
+	width:100%;
+	float:left;
+}
