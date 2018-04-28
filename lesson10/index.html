@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <style type='text/css'>
+        .active {
+            color: green;
+            font-weight: bold;
+        }
+		img{
+		height:30px;
+		}	
+    </style>
+    <div class='editor'>
+        <div class='button'>
+            <input type='button' id='bold' value='B' title="Bold"/>
+            <input type='button' id='italic' value='I' title="Italic"/>
+            <input type='button' id='underline' value='U' title="UnderLine"/>
+            <select id='fontsize' title="FontSize">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+			</select>
+            <select id='fontName' title="FontFamily">
+				<option value="Tahoma">Tahoma</option>
+				<option value="Arial">Arial</option>
+				<option value="Times New Roman">Times New Roman</option>
+			</select>
+            <input type="color" id='color' title="FontColor"/>
+			<input type="button" id='linkBtn' value="link" title="Link"/>
+			<input type="button" id='unlinkBtn' value="unlink" title="UnLink"/>
+			<input type="color" id='colorBg' title="BackgroundColor"/>
+			<input type="button" id='image' value="image" title="Image"/>
+			<input type="button" id='insertLi' value="List" title="OrderList"/>
+        </div>
+        <div id='container' style='width: 500px; height: 200px; border: 1px solid black;' contenteditable='true'>
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+</body>
+<script src='script.js'></script>
+
+</html>
