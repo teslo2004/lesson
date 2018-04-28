@@ -127,13 +127,3 @@ var insertLi = document.getElementById("insertLi");
 insertLi.addEventListener("click", function(){
 	document.execCommand("insertorderedlist", false, null);
 })
-
-document.getSelection().toString();
-
-
-
-
-
-
-
-
